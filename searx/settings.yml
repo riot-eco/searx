@@ -24,7 +24,7 @@ ui:
     default_theme : eelo # ui theme
     default_locale : "" # Default interface locale - leave blank to detect from browser information or use codes from the 'locales' config section
     theme_args :
-        oscar_style : logicodev # default style of oscar
+        oscar_style : pointhi # default style of oscar
 #   results_on_new_tab: False  # Open result links in a new tab by default
 #   categories_order :
 #     - general
