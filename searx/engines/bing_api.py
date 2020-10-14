@@ -20,6 +20,7 @@ def request(query, params):
 
     paging = True
     language_support = True
+    safesearch = True
 
     # Add your Bing Search V7 subscription key and endpoint to your environment variables.
     count_wish = 50
@@ -42,7 +43,7 @@ def response(resp):
     '''post-response callback
     resp: requests response object
     '''
-    resp = response.json()
+    #resp = response.json()
     results = []
 
     for p in resp["webPages"]["value"]:
