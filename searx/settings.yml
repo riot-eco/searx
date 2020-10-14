@@ -105,6 +105,10 @@ engines:
     shortcut : wp
     base_url : 'https://{language}.wikipedia.org/'
 
+  - name : bing web
+    engine : bing_api
+    shortcut : biw
+
   - name : bing
     engine : bing
     shortcut : bi
