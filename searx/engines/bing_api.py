@@ -4,6 +4,7 @@ import json
 import os
 import requests
 import urllib.parse
+from json import loads
 
 categories = ['general']
 
@@ -43,7 +44,7 @@ def response(resp):
     '''post-response callback
     resp: requests response object
     '''
-    #resp = response.json()
+    resp = loads(resp)
     results = []
 
     for p in resp["webPages"]["value"]:
