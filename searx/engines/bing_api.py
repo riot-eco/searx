@@ -44,10 +44,10 @@ def response(resp):
     '''post-response callback
     resp: requests response object
     '''
-    resp = loads(resp)
+    search_resp = loads(resp.text)
     results = []
 
-    for p in resp["webPages"]["value"]:
+    for p in search_resp.resp["webPages"]["value"]:
         res = {'url': p.url, 'title': p.name, 'content': p.snippet}
         results.append(res)
 
