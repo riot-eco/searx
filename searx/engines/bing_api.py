@@ -34,7 +34,8 @@ def request(query, params):
         count_wish) + "&mkt=" + market + "&safesearch=" + safesearch
 
     params['url'] = endpoint + "q=" + urllib.parse.quote(query)
-    params['headers']['Ocp-Apim-Subscription-Key'] = subscription_key
+    #params['headers']['Ocp-Apim-Subscription-Key'] = subscription_key
+    params['headers'] = {'Ocp-Apim-Subscription-Key': subscription_key}
 
     return params
 
@@ -52,4 +53,3 @@ def response(resp):
         results.append(res)
 
     return results
-
